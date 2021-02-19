@@ -1,0 +1,114 @@
+:root{
+    --resaltado: #04B4AE;
+    --negro:#000;
+    --blanco:#fff;
+    --resaltadoTabla:#8B0000;
+    --encabezadoTabla: #2F4F4F;
+    --encabezado:#006400;
+    --text-color: #53575a;
+    --cuerpoTabla:#8FBC8F;
+    --body-bg:#FAFDFF;
+    --dark-color-alt:#141618;
+    --dark-color:#282D31;
+    --sombra:rgba(0, 0, 0, .65);
+    --thir-color-rgba:rgba(47,79,79,.4);
+    --this-color-rgbaSolido:rgba(47,79,79,1);
+    --text-parrafo: Verdana, Geneva, Tahoma, sans-serif;
+
+    
+}
+
+.titulo{
+    font-size: 3em;
+    text-transform: none !important;
+}
+
+.suprarayado{
+    border-top: 1px solid var(--resaltado);
+}
+
+.parrafo{
+   
+    font-size: .8em !important;
+    text-align: left;
+    width: 100%;
+    box-shadow: 0px 0px 0px var(--thir-color-rgba) inset;
+    transition: 0.5s !important;
+}
+
+.reveal p{
+    text-align: justify;
+    /* font-size: 36px; */
+}
+
+.contenido{
+    background: var(--thir-color-rgba);
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    transition: 0.5s !important;
+    padding: 0 10px 0 10px;
+}
+
+.acordeon input{
+    display: none;
+}
+
+.acordeon{
+    margin: 0;
+    padding: 0;
+}
+
+.acordeon input:checked ~ .contenido{
+    height: auto;
+
+}
+
+.acordeon input:checked ~ .contenido{
+    height: auto;
+}
+
+.tituloAcordeon{
+
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: var(--resaltado);
+    font-size: .7em;
+    text-align: left;
+    cursor: pointer;
+
+}
+
+.btn{
+    text-decoration: none;
+    line-clamp: 4;
+    padding: 4px;
+    color: #6a6a6a !important;
+    position: relative;
+    color: var(--resaltado) !important;
+    box-shadow: 0px 0px 0px var(--thir-color-rgba) inset;
+    transition: 0.5s !important;
+    cursor: pointer;
+}
+
+.btn:before{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background:var(--resaltado) !important;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition:  0.5s !important;
+    
+}
+
+.btn:hover{
+    box-shadow: 1500px 0px 0px var(--thir-color-rgba) inset; 
+}
+
+.btn:hover:before{
+    width: 100%;
+}
